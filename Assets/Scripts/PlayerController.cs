@@ -2,19 +2,17 @@
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5f;
-    public Rigidbody2D rb;
-    Vector2 movement;
-    Vector2 mousePos;
-    float shootCooldown = 0.25f;
-    bool isFiring;
+    public float MoveSpeed = 5f;
+    public Rigidbody2D Rb;
+    public Animator Animator;
     public Camera cam;
-    public Animator animator;
-    public Transform gunPosition;
-    public Transform toPosition;
-    public LineRenderer bulletTraceLineRenderer;
-    public GameObject Flare;
+
+    private Vector2 mousePos;
+    private Vector2 movement;
+    private float shootCooldown = 0.25f;
+    private bool isFiring;
     private Weapon weapon;
+    private float almostZero = 0.1f;
 
     // Start is called before the first frame update
     void Start()
@@ -31,9 +29,9 @@ public class PlayerController : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         if (movement != Vector2.zero)
-            animator.SetBool("IsWalking", true);
+            Animator.SetBool("IsWalking", true);
         else
-            animator.SetBool("IsWalking", false);
+            Animator.SetBool("IsWalking", false);
 
         if (isFiring)
         {
@@ -45,10 +43,9 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (!isFiring && Input.GetMouseButton(0))
+        if (!isFiring && Input.GetMouseButton(0) && !Animator.GetBool("CantShoot"))
         {
             isFiring = true;
-            toPosition.position = cam.ScreenToWorldPoint(Input.mousePosition);
             weapon.Shoot();
         }
 
@@ -57,11 +54,18 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.MovePosition(rb.position + movement.normalized * moveSpeed * Time.fixedDeltaTime);
 
-        Vector2 lookDir = mousePos - rb.position;
+        Vector2 lookDir = mousePos - Rb.position;
         float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg;
 
-        rb.rotation = angle;
+        Rb.rotation = angle;
+
+        if (movement.magnitude < almostZero)
+        {
+            movement = Vector2.zero;
+            Rb.velocity = Vector2.zero;
+        }
+
+        Rb.MovePosition(Rb.position + movement.normalized * MoveSpeed * Time.fixedDeltaTime);
     }
 }
