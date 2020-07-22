@@ -68,4 +68,9 @@ public class PlayerController : MonoBehaviour
 
         Rb.MovePosition(Rb.position + movement.normalized * MoveSpeed * Time.fixedDeltaTime);
     }
+
+    void OnDestroy()
+    {
+        Destroy(transform.parent.gameObject);
+    }
 }

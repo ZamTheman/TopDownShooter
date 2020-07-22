@@ -3,10 +3,23 @@ using UnityEngine.UI;
 
 public class HealtBarScript : MonoBehaviour
 {
-    public Slider slider;
+    public Slider Slider;
+    public Transform FollowTarget;
+    public float YOffset = 0.9f;
+
+    public void Update()
+    {
+        if (FollowTarget == null)
+            Destroy(gameObject);
+
+        transform.position = new Vector3(
+            FollowTarget.position.x,
+            FollowTarget.position.y + YOffset,
+            FollowTarget.position.z);
+    }
 
     public void SetHealth(int maxHealth, int currentHealth)
     {
-        slider.value = (float)currentHealth / (float)maxHealth;
+        Slider.value = (float)currentHealth / (float)maxHealth;
     }
 }

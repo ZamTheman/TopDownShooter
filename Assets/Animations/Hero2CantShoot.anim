@@ -48,7 +48,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: HeroKeeper/Head
+    path: Graphics/Head
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -82,7 +82,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: HeroKeeper/TorsoWithArms
+    path: Graphics/TorsoWithArms
   m_ScaleCurves: []
   m_FloatCurves:
   - curve:
@@ -110,7 +110,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: HeroKeeper/BackPack
+    path: Graphics/BackPack
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -138,7 +138,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: HeroKeeper/Gun
+    path: Graphics/Gun
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -166,7 +166,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: HeroKeeper/GunPosition
+    path: Graphics/GunPosition
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -194,7 +194,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: HeroKeeper/Head
+    path: Graphics/Head
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -222,7 +222,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: HeroKeeper/TorsoWithArms
+    path: Graphics/TorsoWithArms
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -250,7 +250,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: HeroKeeper/TorsoWithoutArms
+    path: Graphics/TorsoWithoutArms
     classID: 1
     script: {fileID: 0}
   m_PPtrCurves: []
@@ -364,7 +364,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: HeroKeeper/BackPack
+    path: Graphics/BackPack
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -392,7 +392,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: HeroKeeper/Gun
+    path: Graphics/Gun
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -420,7 +420,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: HeroKeeper/GunPosition
+    path: Graphics/GunPosition
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -457,7 +457,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: HeroKeeper/Head
+    path: Graphics/Head
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -494,7 +494,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: HeroKeeper/Head
+    path: Graphics/Head
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -531,7 +531,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: HeroKeeper/Head
+    path: Graphics/Head
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -559,7 +559,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: HeroKeeper/Head
+    path: Graphics/Head
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -596,7 +596,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: HeroKeeper/TorsoWithArms
+    path: Graphics/TorsoWithArms
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -633,7 +633,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: HeroKeeper/TorsoWithArms
+    path: Graphics/TorsoWithArms
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -670,7 +670,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: HeroKeeper/TorsoWithArms
+    path: Graphics/TorsoWithArms
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -698,7 +698,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: HeroKeeper/TorsoWithArms
+    path: Graphics/TorsoWithArms
     classID: 1
     script: {fileID: 0}
   - curve:
@@ -726,7 +726,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_IsActive
-    path: HeroKeeper/TorsoWithoutArms
+    path: Graphics/TorsoWithoutArms
     classID: 1
     script: {fileID: 0}
   m_EulerEditorCurves: []

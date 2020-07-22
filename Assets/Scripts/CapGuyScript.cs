@@ -35,9 +35,13 @@ public class CapGuyScript : MonoBehaviour
         }
     }
 
-
     void OnTriggerEnter2D(Collider2D collider)
     {
         Patrol.FlipDirection();
+    }
+
+    void OnDestroy()
+    {
+        Destroy(transform.parent.gameObject);
     }
 }

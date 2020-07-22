@@ -24,6 +24,8 @@ public class CantShootBox : MonoBehaviour
         colliders.Add(other, true);
 
         animator.SetBool("CantShoot", true);
+
+        Debug.Log(animator.GetBool("CantShoot"));
     }
 
     private void OnTriggerExit2D(Collider2D other)
